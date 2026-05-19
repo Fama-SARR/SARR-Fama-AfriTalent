@@ -1,0 +1,289 @@
+:root{
+
+    /* Couleurs */
+    --primary-color: #0d6efd;
+    --secondary-color: #6610f2;
+    --dark-color: #111827;
+    --light-color: #f9fafb;
+    --text-color: #374151;
+    --white-color: #ffffff;
+
+    --title-font: 'Poppins', sans-serif;
+    --body-font: 'Inter', sans-serif;
+
+    --spacing: 20px;
+
+    --radius: 12px;
+
+    --transition: 0.3s ease;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: var(--body-font);
+    background-color: var(--light-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5{
+    font-family: var(--title-font);
+    color: var(--dark-color);
+    font-weight: 700;
+}
+
+a{
+    text-decoration: none;
+}
+
+.navbar{
+    padding: 15px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.navbar-brand{
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: var(--title-font);
+}
+
+.nav-link{
+    margin-left: 15px;
+    transition: var(--transition);
+    font-weight: 500;
+}
+
+.nav-link:hover{
+    color: var(--primary-color) !important;
+}
+
+
+#hero{
+    padding: 80px 0;
+}
+
+#hero h1{
+    font-size: 3.2rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+#hero h2{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+#hero p{
+    margin-bottom: 25px;
+}
+
+#hero img{
+    max-width: 100%;
+}
+
+
+.btn{
+    border-radius: 10px;
+    padding: 12px 22px;
+    transition: var(--transition);
+}
+
+.btn:hover{
+    transform: translateY(-3px);
+}
+
+section{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+
+.border{
+    border-radius: var(--radius) !important;
+    background-color: var(--white-color);
+    transition: var(--transition);
+}
+
+.border:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+section h3{
+    color: var(--primary-color);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+/* TEMOIGNAGES */
+.carousel-item{
+    padding: 30px;
+}
+
+.carousel-item img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+
+/* FOOTER */
+footer{
+    background-color: var(--dark-color);
+}
+
+footer h5{
+    color: var(--white-color);
+    margin-bottom: 20px;
+}
+
+footer p,
+footer a{
+    color: #d1d5db;
+}
+
+footer a{
+    transition: var(--transition);
+}
+
+footer a:hover{
+    color: var(--primary-color) !important;
+}
+
+
+@media(max-width:992px){
+
+    #hero{
+        text-align: center;
+    }
+
+    #hero h1{
+        font-size: 2.5rem;
+    }
+
+    .nav-link{
+        margin-left: 0;
+    }
+
+}
+
+
+@media(max-width:768px){
+
+    #hero h1{
+        font-size: 2rem;
+    }
+
+    #hero h2{
+        font-size: 1.2rem;
+    }
+
+    .btn{
+        margin-bottom: 10px;
+    }
+
+    .carousel-item{
+        padding: 15px;
+    }
+
+}
+/* CARDS FREELANCES */
+.card{
+    border: none;
+    border-radius: 15px;
+    transition: 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.card img{
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.card h5{
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+.card p{
+    margin-bottom: 10px;
+}
+/* ABOUT PAGE */
+.card{
+    transition: 0.3s ease;
+    border-radius: 15px;
+}
+
+.card:hover, .border:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* TARIS PAGES */
+.pricing-card{
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+
+.pricing-card:hover{
+    transform: translateY(-6px);
+}
+/* TITRE TARIFS */
+h1, h2{
+    font-family: var(--title-font);
+}
+.popular{
+    border: 2px solid var(--primary-color);
+    transform: scale(1.05);
+}
+
+/* FORM CONTACT */
+.main-contact{
+    margin-top:90px;
+}
+form{
+    background: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+form .form-control,
+form .form-select{
+    border-radius: 10px;
+}
+
+form .btn{
+    padding: 10px 20px;
+    border-radius: 10px;
+}
