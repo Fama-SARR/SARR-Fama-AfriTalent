@@ -268,9 +268,6 @@ h1, h2{
 }
 
 /* FORM CONTACT */
-.main-contact{
-    margin-top:90px;
-}
 form{
     background: #fff;
     padding: 25px;
@@ -286,4 +283,267 @@ form .form-select{
 form .btn{
     padding: 10px 20px;
     border-radius: 10px;
+}
+
+#hero h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+#hero h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+
+.bento {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.bento-item {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    background: #fff;
+    transition: 0.3s ease;
+}
+
+.bento-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+#hero h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+#hero h2 {
+    font-size: 1.4rem;
+    opacity: 0.8;
+}
+
+#hero p {
+    font-size: 1rem;
+    opacity: 0.7;
+}
+
+.col-md-4.border {
+    transition: 0.3s ease;
+    border-radius: 10px;
+}
+
+.col-md-4.border:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.carousel-item {
+    padding: 20px;
+}
+
+.carousel-item img {
+    object-fit: cover;
+}
+
+section h3 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.card {
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    transition: 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.card img {
+    object-fit: cover;
+    border: 3px solid #eee;
+}
+
+.card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.pricing-card {
+    transition: 0.3s ease;
+    border-radius: 15px;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.popular {
+    border: 2px solid #0d6efd;
+    transform: scale(1.05);
+}
+.pricing-card {
+    border: none;
+    border-radius: 15px;
+    transition: 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+.popular {
+    border: 2px solid #0d6efd;
+    transform: scale(1.05);
+    position: relative;
+}
+
+.popular .badge {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.accordion-button {
+    font-weight: 500;
+}
+
+.accordion-item {
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.card {
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.fs-5 i {
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.fs-5 i:hover {
+    color: #0d6efd;
+}
+
+.about-hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.about-hero p {
+    font-size: 1.2rem;
+    color: #666;
+}
+main h1,
+main h2 {
+    font-weight: 700;
+}
+
+main p {
+    line-height: 1.8;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.card img {
+    object-fit: cover;
+    height: 100px;
+    width: 100px;
+}
+.fs-5 i {
+    margin: 0 6px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.fs-5 i:hover {
+    color: #0d6efd;
+}
+.border {
+    border-radius: 15px !important;
+    transition: 0.3s ease;
+}
+
+.border:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+form {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+.form-control,
+.form-select {
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.form-control:focus,
+.form-select:focus {
+    box-shadow: none;
+    border-color: #0d6efd;
+}
+form .btn {
+    padding: 12px 25px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+form .btn:hover {
+    transform: translateY(-3px);
+}
+.main-contact i {
+    color: #0d6efd;
+    margin-right: 10px;
+}
+iframe {
+    border-radius: 15px;
+}
+.main-contact img{
+    max-height: 300px;
+    object-fit: cover;
+    width: 100%;
 }
