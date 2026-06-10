@@ -10,13 +10,13 @@
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <link rel="stylesheet"
-
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@600;700;800&display=swap"
+        rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
@@ -27,24 +27,22 @@
 
     <header>
 
-        
+
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
             <div class="container">
 
-                
+
                 <a class="navbar-brand" href="index.html">
                     AfriTalent
                 </a>
-                
-                <button class="navbar-toggler" type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#menu">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
 
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                
+
                 <div class="collapse navbar-collapse" id="menu">
 
                     <ul class="navbar-nav ms-auto">
@@ -87,7 +85,7 @@
 
                     </ul>
                     <button id="theme-toggle" class="btn btn-outline-light ms-3">
-                       🌙
+                        🌙
                     </button>
 
 
@@ -99,192 +97,168 @@
 
     </header>
 
-    
+
     <main class="main-contact">
         <section class="container text-center py-5">
-    <h1>Contactez-nous</h1>
-    <p>Envoyez-nous un message</p>
-</section>
-    
-
-    <section class="container pb-5">
-
-        <div class="row g-5">
-
-            <!-- FORMULAIRE -->
-
-            <div class="col-lg-7">
-
-                <form>
-
-                    <!-- NOM -->
-
-                    <div class="mb-3">
-
-                        <label class="form-label">
-
-                            Nom
-
-                        </label>
-
-                        <input type="text"
-
-                               class="form-control"
-
-                               placeholder="Votre nom">
-
-                    </div>
-
-                    <!-- PRENOM -->
-
-                    <div class="mb-3">
-
-                        <label class="form-label">
-
-                            Prénom
-
-                        </label>
-
-                        <input type="text"
-
-                               class="form-control"
-
-                               placeholder="Votre prénom">
-
-                    </div>
-
-                    <!-- EMAIL -->
-
-                    <div class="mb-3">
-
-                        <label class="form-label">
-
-                            Email
-
-                        </label>
-
-                        <input type="email"
-
-                               class="form-control"
-
-                               placeholder="Votre email">
-
-                    </div>
+            <h1>Contactez-nous</h1>
+            <p>Envoyez-nous un message</p>
+        </section>
 
 
-                    <div class="mb-3">
+        <section class="container pb-5">
 
-                        <label class="form-label">
+            <div class="row g-5">
 
-                            Sujet
+                <!-- FORMULAIRE -->
 
-                        </label>
+                <div class="col-lg-7">
 
-                        <select class="form-select">
+                    <form>
 
-                            <option>Choisir un sujet</option>
+                        <!-- NOM -->
 
-                            <option>Support technique</option>
+                        <div class="mb-3">
 
-                            <option>Recrutement</option>
+                            <label class="form-label">
 
-                            <option>Partenariat</option>
+                                Nom
 
-                            <option>Informations générales</option>
+                            </label>
 
-                        </select>
+                            <input type="text" id="nom" class="form-control" placeholder="Votre nom">
+                            <small id="nomError" class="text-danger"></small>
 
-                    </div>
+                        </div>
 
-                    <!-- MESSAGE -->
+                        <!-- PRENOM -->
 
-                    <div class="mb-3">
+                        <div class="mb-3">
 
-                        <label class="form-label">
+                            <label class="form-label">
 
-                            Message
+                                Prénom
 
-                        </label>
+                            </label>
 
-                        <textarea class="form-control"
+                            <input type="text" id="prenom" class="form-control" placeholder="Votre prénom">
+                            <small id="prenomError" class="text-danger"></small>
 
-                                  rows="5"
 
-                                  placeholder="Votre message"></textarea>
+                        </div>
 
-                    </div>
+                        <!-- EMAIL -->
 
-                    
+                        <div class="mb-3">
 
-                    <button type="submit"
+                            <label class="form-label">
 
-                            class="btn btn-primary">
+                                Email
 
-                        Envoyer le message
+                            </label>
 
-                    </button>
+                            <input type="email" id="email" class="form-control" placeholder="Votre email">
+                            <small id="emailError" class="text-danger"></small>
+                        </div>
 
-                </form>
+
+                        <div class="mb-3">
+
+                            <label class="form-label">
+
+                                Sujet
+
+                            </label>
+
+                            <select id="sujet" class="form-select">
+
+                                <option>Choisir un sujet</option>
+
+                                <option>Support technique</option>
+
+                                <option>Recrutement</option>
+
+                                <option>Partenariat</option>
+
+                                <option>Informations générales</option>
+
+                            </select>
+
+                        </div>
+
+                        <!-- MESSAGE -->
+
+                        <div class="mb-3">
+
+                            <label class="form-label">
+
+                                Message
+
+                            </label>
+
+                            <textarea id="message" class="form-control" rows="5" placeholder="Votre message"></textarea>
+                            <small id="messageError" class="text-danger"></small>
+                        </div>
+
+
+
+                        <button type="submit" class="btn btn-primary">
+
+                            Envoyer le message
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+                <!-- INFORMATIONS -->
+
+                <div class="col-lg-5">
+
+                    <h2 class="mb-4">
+
+                        Nos coordonnées
+
+                    </h2>
+
+                    <p>
+
+                        <i class="bi bi-envelope-fill"></i>
+
+                        contact@afritalent.com
+
+                    </p>
+
+                    <p>
+
+                        <i class="bi bi-telephone-fill"></i>
+
+                        +221 77 283 90 77
+
+                    </p>
+
+                    <p>
+
+                        <i class="bi bi-geo-alt-fill"></i>
+
+                        Dakar, Sénégal
+
+                    </p>
+
+                    <img src="images/about-history.png" class="img-fluid rounded mb-4" alt="Équipe AfriTalent">
+
+
+
+
+                    <!-- GOOGLE MAPS -->
+                    <iframe src="https://www.google.com/maps?q=Dakar,Senegal&output=embed" width="100%" height="250"
+                        style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
 
             </div>
 
-            <!-- INFORMATIONS -->
-
-            <div class="col-lg-5">
-
-                <h2 class="mb-4">
-
-                    Nos coordonnées
-
-                </h2>
-
-                <p>
-
-                    <i class="bi bi-envelope-fill"></i>
-
-                    contact@afritalent.com
-
-                </p>
-
-                <p>
-
-                    <i class="bi bi-telephone-fill"></i>
-
-                    +221 77 283 90 77
-
-                </p>
-
-                <p>
-
-                    <i class="bi bi-geo-alt-fill"></i>
-
-                    Dakar, Sénégal
-
-                </p>
-
-                <img src="images/about-history.png"
-
-                     class="img-fluid rounded mb-4"
-
-                     alt="Équipe AfriTalent">
-                     
-
-            
-
-                <!-- GOOGLE MAPS -->
-<iframe
-    src="https://www.google.com/maps?q=Dakar,Senegal&output=embed"
-    width="100%"
-    height="250"
-    style="border:0;"
-    allowfullscreen=""
-    loading="lazy">
-</iframe>
-            </div>
-
-        </div>
-
-    </section>
+        </section>
 
     </main>
 
@@ -297,11 +271,11 @@
 
     </footer>
     <button id="backToTop" class="btn btn-primary">
-       ↑
+        ↑
     </button>
 
 
-   
+
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -310,4 +284,5 @@
     <script src="js/main.js"></script>
 
 </body>
+
 </html>
