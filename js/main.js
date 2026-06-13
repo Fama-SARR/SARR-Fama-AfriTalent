@@ -157,7 +157,7 @@ filterButtons.forEach(button => {
     });
 
 });
-// VALIDATION FORMULAIRE CONTACT
+//  VALIDATION FORMULAIRE CONTACT
 
 const form = document.querySelector("form");
 
